@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 20px;
+    color: #fff;
+}
+
+#clockdiv {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.clock {
+    border: 5px solid #000;
+    background: rgb(0,102,255);
+    background: radial-gradient(circle, rgba(0,102,255,1) 0%, rgba(69,73,13,1) 96%);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.second_needle {
+    background-color: transparent;
+    position: absolute;
+    height: 70%;
+    margin: 15% 0 15% 0;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.minute_needle {
+    background-color: transparent;
+    position: absolute;
+    height: 80%;
+    margin: 10% 0 10% 0;
+    left: 50%;
+}
+.hour_needle {
+    background-color: transparent;
+    position: absolute;
+    height: 60%;
+    margin: 20% 0 20% 0;
+    left: 50.5%;
+}
+
+.wrapper_second {
+    position: absolute;
+    background: #000;
+    width: 2px;
+    height: 50%;
+    left: 50%;
+}
+.wrapper_minute {
+    position: absolute;
+    background: #000;
+    width: 3px;
+    height: 50%;
+    left: 50%;
+}
+.wrapper_hour {
+    position: absolute;
+    background: #000;
+    width: 3px;
+    height: 50%;
+    left: 50%;
+}
+.inner_circle {
+    position: absolute;
+    background: #000;
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    left: calc(50% - 2%);
+    top: calc(50% - 2%);
+}
+
+.twelve {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 10px)
+}
+
+.six {
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 7px)
+}
+
+.three {
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 10px;
+}
+
+.nine {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 10px;
+}
+.one {
+    position: absolute;
+    left: 72%;
+    top: 8%;
+}
+.five {
+    position: absolute;
+    left: 71%;
+    top: 85%;
+}
+.two {
+    position: absolute;
+    left: 88%;
+    top: 25%;
+}
+.four {
+    position: absolute;
+    left: 86%;
+    top: 70%;
+}
+.eleven {
+    position: absolute;
+    left: 25%;
+    top: 8%;
+}
+.ten {
+    position: absolute;
+    left: 9%;
+    top:24%;
+}
+.seven {
+    position: absolute;
+    left: 25%;
+    top:84%;
+}
+.eight {
+    position: absolute;
+    left: 8%;
+    top:68%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    * {
+        font-size: 10px;
+    }
+    .twelve {
+        left: calc(50% - 5px)
+    }
+    
+    .six {
+        bottom: 0;
+        left: calc(50% - 5px);
+        bottom: 10px;
+    }
+    
+    .three {
+        top: calc(50% - 7px);
+    }
+    
+    .nine {
+        top: calc(50% - 7px);
+    }
+}
