@@ -16,6 +16,14 @@
     height: 100vh;
 }
 
+.wrapper {
+    border-radius: 50%;
+    padding: 10px;
+    background: rgb(0,181,255);
+background: linear-gradient(0deg, rgba(69,73,109,1) 13%, rgba(0,181,255,1) 100%);
+box-shadow: rgba(69,73,109,1) 0px 25px 20px -20px;
+}
+
 .clock {
     border: 5px solid #000;
     background: rgb(0,102,255);
